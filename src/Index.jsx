@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Routes from './Routes';
+import '../public/style.css';
 
-ReactDOM.render(<div>App is up and running</div>, document.getElementById('root'));
+ReactDOM.render(<Routes />, document.getElementById('root'));
 
 if (module.hot) module.hot.accept();
