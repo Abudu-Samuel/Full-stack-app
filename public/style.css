@@ -1,0 +1,13 @@
+.btn {
+  border-radius: 30px;
+}
+
+.strike-through {
+  text-decoration: line-through;
+  color: slategray;
+}
+
+.custom-text {
+  color: #3f51b5!important
+}
+
