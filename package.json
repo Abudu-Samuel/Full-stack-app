@@ -11,7 +11,7 @@
     "build:dev:client": "webpack-dev-server --mode development",
     "build:dev:server": "nodemon src/server/server.js --exec babel-node",
     "build:prod:client": "webpack --mode production",
-    "build:prod:server": "babel src/server/server.js -d dist/",
+    "build:prod:server": "babel src/server/ -d dist/",
     "build:prod": "npm run build:prod:client && npm run build:prod:server",
     "heroku-postbuild": "npm run build:prod",
     "test": "echo \"Error: no test specified\" && exit 1"

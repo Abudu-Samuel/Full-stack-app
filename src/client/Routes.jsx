@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Header from './components/common/Header';
+import NotFoundPage from './components/common/NotFoundPage';
 import Groceries from './components/grocery/Groceries';
 
 const Routes = () => (
@@ -11,8 +12,9 @@ const Routes = () => (
       </div>
       <Switch>
         <Route exact path="/" component={Groceries} />
+        <Route component={NotFoundPage} />
       </Switch>
-    </Fragment>  
+    </Fragment>
   </BrowserRouter>
 );
 

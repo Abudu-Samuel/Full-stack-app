@@ -11,7 +11,7 @@ const propTypes = {
 const renderItemsNotFound = () => (
   <div className="no-items central">
     <i className="fa fa-exclamation-triangle fa-3x pb-3 d-block" />
-    <p className="lead">There are currently no items in the store</p>
+    <p className="lead">Grocery store is empty!!!</p>
   </div>
 );
 
