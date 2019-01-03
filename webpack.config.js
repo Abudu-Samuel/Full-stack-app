@@ -4,7 +4,7 @@ const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 
-const prodEntryPoint = path.resolve(__dirname, './src/Index.jsx');
+const prodEntryPoint = path.resolve(__dirname, './src/client/Index.jsx');
 const devEntryPoint = [
   'react-dev-utils/webpackHotDevClient', prodEntryPoint
 ];
@@ -83,7 +83,7 @@ module.exports = (env, argv) => ({
   },
   plugins: [
     new CleanWebpackPlugin('dist', {}),
-    argv.mode !== 'production' ? new webpack.HotModuleReplacementPlugin() : () => {},
+    argv.mode !== 'production' ? new webpack.HotModuleReplacementPlugin() : () => { },
     htmlPlugin,
     new MiniCssExtractPlugin({
       filename: argv.mode === 'production' ? 'style.[hash].css' : '[name].css',
