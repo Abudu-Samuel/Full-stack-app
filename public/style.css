@@ -11,3 +11,29 @@
   color: #3f51b5!important
 }
 
+.no-items {
+  color: #6c757d
+}
+
+ .loader-container {
+  display: flex;
+  height: 350px;
+  justify-content: center;
+  align-items: center;
+}
+
+ .field-error {
+  color: #921e2a;
+  font-style: italic;
+  font-size: 12px;
+}
+
+.central {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  width: 45% !important
+}
