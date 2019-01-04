@@ -24,7 +24,7 @@ class GroceryController {
 
     grocery.save()
       .then(item => responseInfo.success(res, 201, 'Grocery successfully added', item))
-      .catch(() => responseInfo.error(res, 400, 'Sorry! unable to save grocery item'));
+      .catch(() => responseInfo.error(res, 500, 'Sorry! unable to save grocery item'));
   }
 
   static updateItem = (req, res) => {
