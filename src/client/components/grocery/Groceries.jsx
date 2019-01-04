@@ -23,7 +23,7 @@ const propTypes = {
   }).isRequired
 };
 
-class Groceries extends Component {
+export class Groceries extends Component {
   state = {
     name: '',
     error: {}

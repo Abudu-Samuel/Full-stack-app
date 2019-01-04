@@ -11,7 +11,16 @@
     "node": true,
     "es6": true,
     "browser": true,
-    "jest": true
+    "jest": true,
+    "mocha": true
+  },
+  "globals": {
+    "moxios": true,
+    "storeMock": true,
+    "shallow": true,
+    "mount": true,
+    "toJson": true,
+    "React": true
   },
   "parserOptions": {
     "ecmaVersion": 8,
@@ -29,16 +38,22 @@
       }
     ],
     "import/prefer-default-export": "off",
-    "comma-dangle": ["error",{
-      "functions": "ignore"
-    }],
+    "comma-dangle": [
+      "error",
+      {
+        "functions": "ignore"
+      }
+    ],
     "no-param-reassign": "off",
     "no-shadow": "off",
     "import/no-named-as-default": "off",
     "no-console": 1,
     "no-debugger": 1,
     "no-var": 1,
-    "semi": [1, "always"],
+    "semi": [
+      1,
+      "always"
+    ],
     "no-trailing-spaces": 0,
     "eol-last": 0,
     "no-unused-vars": 0,
@@ -47,8 +62,20 @@
     "no-lone-blocks": 0,
     "import/no-unresolved": 0,
     "jsx-quotes": 1,
-    "react/display-name": [ 0, {"ignoreTranspilerName": false }],
-    "react/forbid-prop-types": [1, {"forbid": ["any"]}],
+    "react/display-name": [
+      0,
+      {
+        "ignoreTranspilerName": false
+      }
+    ],
+    "react/forbid-prop-types": [
+      1,
+      {
+        "forbid": [
+          "any"
+        ]
+      }
+    ],
     "react/jsx-boolean-value": 1,
     "react/jsx-closing-bracket-location": 0,
     "react/jsx-curly-spacing": 1,
@@ -76,6 +103,12 @@
     "react/react-in-jsx-scope": 1,
     "react/self-closing-comp": 1,
     "react/sort-comp": 1,
-    "react/destructuring-assignment": [2, "always", { "ignoreClassFields": true }]
+    "react/destructuring-assignment": [
+      2,
+      "always",
+      {
+        "ignoreClassFields": true
+      }
+    ]
   }
 }

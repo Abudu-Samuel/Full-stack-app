@@ -44,7 +44,7 @@ export const fetchAllGroceries = () => (dispacth) => {
       dispacth(isFetching(false));
     })
     .catch((error) => {
-      dispacth(allRoundProcessError(error.response.data));
+      dispacth(allRoundProcessError(error.response.data.message));
       dispacth(isFetching(false));
     });
 };
@@ -57,7 +57,7 @@ export const addGrocery = name => (dispacth) => {
       dispacth(isProcessing(false));
     })
     .catch((error) => {
-      dispacth(allRoundProcessError(error.response.data));
+      dispacth(allRoundProcessError(error.response.data.message));
       dispacth(isProcessing(false));
     });
 };
@@ -71,7 +71,7 @@ export const deleteGrocery = _id => (dispacth) => {
       dispacth(isProcessing(false));
     })
     .catch((error) => {
-      dispacth(allRoundProcessError(error.response.data));
+      dispacth(allRoundProcessError(error.response.data.message));
       dispacth(isProcessing(false));
     });
 };
@@ -84,7 +84,7 @@ export const purchaseOrDropGrocery = _id => (dispacth) => {
       dispacth(isProcessing(false));
     })
     .catch((error) => {
-      dispacth(allRoundProcessError(error.response.data));
+      dispacth(allRoundProcessError(error.response.data.message));
       dispacth(isProcessing(false));
     });
 };
